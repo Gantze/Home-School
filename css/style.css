@@ -1,0 +1,1166 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1600px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Header section */
+header{
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+#header-container{
+    padding: 10px 180px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-header-section{
+    display: flex;
+    gap: 20px;
+}
+
+#home-school-logo-header{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: hsl(257, 27%, 26%);
+    font-weight: bold;
+}
+
+#home-school-logo-header span{
+    color: hsl(180, 66%, 49%);
+}
+
+#benefits-reviews-pricing-faq{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#benefits-reviews-pricing-faq a, #log-in-button{
+    color: hsl(0, 0%, 70%);
+}
+
+#right-header-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#log-in-button, #sign-up-button{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#sign-up-button{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+}
+
+#menu-bar{
+    display: none;
+    font-size: 20px;
+}
+
+
+
+/* Hamburger section*/
+#hamburger-menu-container{
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    padding: 0 15px;
+    z-index: 1;
+    display: none;
+}
+
+#hamburger-menu{
+    padding: 25px;
+    background-color: hsl(257, 27%, 26%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+#benefits-reviews-pricing-faq-hamburger, #log-in-sign-up-hamburger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#benefits-reviews-pricing-faq-hamburger a, #log-in-sign-up-hamburger a{
+    color: white;
+}
+
+#hamburger-menu hr{
+    width: 100%;
+    height: 1px;
+    border-width: 0;
+    color: white;
+    background-color: white;
+}
+
+#sign-up-button-hamburger{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: hsl(180, 66%, 49%);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sign-up-button-hamburger:hover, #log-in-button-hamburger:hover{
+    opacity: 30%;
+}
+
+
+
+/* Hero section */
+#hero-container{
+    margin-bottom: 20px;
+    display: flex;
+    background-image: url('../images/bg-pattern-top-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 41% 87%;
+    background-position: -10px -85px;
+}
+
+#text-hero-section, #image-hero-section{
+    width: 50%;
+    font-weight: bold;
+}
+
+#text-hero-section{
+    padding-left: 50px;
+    margin-bottom: 40px;
+}
+
+#text-hero-section h1{
+    font-size: 75px;
+    color: hsl(257, 27%, 26%);
+    margin-top: 75px;
+}
+
+#text-hero-section h6{
+    font-size: 20px;
+    color: hsl(0, 0%, 75%);
+    margin-top: 15px;
+}
+
+#image-hero-section{
+    background-image: url('../images/illustration-working.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 50px;
+}
+
+
+
+/* Call to action 1 section */
+#call-to-action-1-container{
+    display: flex;
+    justify-content: center;
+}
+
+#call-to-action-1-box{
+    width: 80%;
+    background-color: hsl(257, 27%, 26%);
+    height: 100px;
+    background-image: url('../images/bg-boost-desktop.svg');
+    background-size: 70%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+#call-to-action-1-box a, #call-to-action-2-container a{
+    padding: 15px 25px;
+    background-color: hsl(180, 66%, 49%);
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid hsl(180, 66%, 49%);
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+#call-to-action-1-box a:hover, #call-to-action-2-container a:hover{
+    background-color: white;
+    color: hsl(180, 66%, 49%);
+}
+
+
+
+/* Benfits section */
+#benefits-container{
+    background-color: hsl(0, 0%, 75%, 0.3);
+    padding: 100px 15px 20px 15px;
+}
+
+#benefits-heading-box{
+    text-align: center;
+}
+
+#benefits-heading-box h4{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#benefits-heading-box p{
+    font-size: 15px;
+    color: hsl(257, 7%, 63%);
+    margin-top: 15px;
+}
+
+#benefits-cards-container{
+    display: flex;
+    background-color: none;
+    gap: 25px;
+    margin: 75px 10px 25px 10px;
+}
+
+.benefits-cards{
+    background-color: white;
+    padding: 70px 30px 30px 30px;
+    text-align: center;
+    border-radius: 10px;
+    width: 33.33%;
+    position: relative;
+}
+
+.benefits-cards h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.benefits-cards p{
+    font-size: 15px;
+    color: hsl(257, 7%, 63%);
+    margin-top: 15px;
+}
+
+.benefits-icons{
+    background-color: hsl(257, 27%, 26%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px 35px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 1px;
+    left: 50%;
+}
+
+#benefits-icon-1{
+    background-image: url("../images/icon-brand-recognition.svg");
+    
+}
+
+#benefits-icon-2{
+    background-image: url("../images/icon-detailed-records.svg");
+
+}
+
+#benefits-icon-3{
+    background-image: url('../images/icon-fully-customizable.svg');
+
+}
+
+
+
+/* Rating & Reviews area */
+#rating-reviews-container{
+    padding: 50px 100px;
+}
+
+#title-rating-box{
+    display: flex;
+    gap: 50px;
+}
+
+#rating-reviews-title-box{
+    color: hsl(257, 27%, 26%);
+    width: 50%;
+}
+
+#rating-reviews-title-box h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+#rating-reviews-title-box h6{
+    font-size: 15px;
+    max-width: 40ch;
+}
+
+#rating-boxes-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-boxes{
+    width: 500px;
+    background-color: hsl(0, 20%, 90%, 0.5);
+    padding: 15px;
+    margin: 6px 0;
+    border-radius: 5px;
+    color: hsl(257, 27%, 26%);
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+}
+
+.rating-boxes-star-containers{
+    margin: 0 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.fa-star{
+    color: #ffaa00;
+}
+
+#testimonials-container{
+    margin: 50px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-cards{
+    padding: 30px;
+    border-radius: 5px;
+    background-color: hsl(257, 27%, 26%);
+}
+
+.picture-name-boxes-reviews-cards{
+    display: flex;
+}
+
+.picture-name-boxes-reviews-cards img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.picture-name-boxes-reviews-cards div h6{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.picture-name-boxes-reviews-cards div p{
+    font-size: 13px;
+    color: hsl(180, 66%, 49%);
+}
+
+.reviews-cards-text-comment{
+    margin-top: 30px;
+    font-size: 13px;
+    color: white;
+    max-width: 32ch;
+}
+
+
+
+/* Price section */
+#gray-special-offer-area{
+    background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, left bottom; 
+}
+
+#limited-offer-section{
+    background-color: hsl(0, 0%, 75%, 0.3);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer-container{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    font-size: 18px;
+    color: hsl(260, 8%, 14%);
+}
+
+#timer-container p{
+    text-align: center;
+}
+
+#prices-section{
+    background-color: hsl(0, 0%, 75%, 0.3);
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prices-heading h2, #limited-offer-section h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: hsl(260, 8%, 14%);
+}
+
+#limited-offer-section h2{
+    max-width: 26ch;
+    text-align: center;
+}
+
+#subscription-period-container{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.subscription-period-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#annually{
+    background-color: white;
+    color: hsl(257, 27%, 26%);
+    border: 1px solid hsl(257, 27%, 26%);
+}
+
+#monthly{
+    background-color: hsl(257, 27%, 26%);
+    color: white;
+    border: 1px solid hsl(257, 27%, 26%);
+}
+
+#subscription-period-container span:hover{
+    border: 1px solid white;
+}
+
+#subscription-cards-container{
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.subscription-cards{
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.purple-subscription-card{
+    padding: 40px 15px;
+    background-color: hsl(257, 27%, 26%);
+    color: white;
+}
+
+.white-subscription-cards{
+    color: hsl(257, 27%, 26%);
+    background-color: white;
+}
+
+.subscription-cards-details{
+    line-height: 10px;
+}
+
+hr{
+    height: 1px;
+    border-width: 0;
+    color: hsl(257, 27%, 26%);
+    background-color: hsl(257, 27%, 26%); 
+}
+
+.purple-subscription-card hr{
+    height: 1px;
+    border-width: 0;
+    color: white;
+    background-color: white;
+}
+
+.subscription-cards-prices{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0; 
+}
+
+.start-subscription-buttons-containers-prices{
+    display: flex;
+    justify-content: center;
+}
+
+.start-subscription-buttons-prices{
+    padding: 15px 25px;
+    margin: 15px 0;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+.purple-subscription-card a{
+    border-color: hsl(257, 27%, 26%); 
+}
+
+.start-subscription-buttons-prices:hover{
+    border-color: hsl(180, 66%, 49%);
+    background-color: white;
+    color: hsl(180, 66%, 49%);
+}
+
+
+
+/* FAQ section */
+#faq-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#faq-box{
+    background-color: hsl(257, 27%, 26%);
+    width: 1000px;
+    padding: 20px;
+    margin: 100px 0;
+    color: white;
+    display: flex;
+    border-radius: 10px;
+}
+
+#faq-box-left-column{
+    width: 400px;
+    position: relative;
+}
+
+#faq-image-box{
+    background-image: url('../images/illustration-woman-online-mobile.svg');
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 300px;
+    background-size: 350px 300px;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: -75px;
+}
+
+#faq-box-right-column{
+    width: 100%;
+    margin-left: 20px;
+}
+
+#faq-title-box{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#faq-text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#faq-text-box hr{
+    width: 100%;
+    height: 1px;
+    border-width: 0;
+    color: white;
+    background-color: white;
+}
+
+.faq-text-lines{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-text-lines div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-text-lines p, .faq-text-lines i.fa-angle-up{
+    display: none;
+}
+
+.faq-text-lines i.fa-angle-up, .faq-text-lines i.fa-angle-down{
+    font-size: 11px;
+    cursor: pointer;
+    color: #e27e36;
+}
+
+.faq-text-lines h5{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.faq-text-lines p{
+    font-size: 12px;
+    max-width: 90%;
+}
+
+
+
+/* Call to action 2 section */
+#call-to-action-2-container{
+    padding: 50px 15px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url('../images/bg-boost-mobile.svg');
+}
+
+#call-to-action-2-container h3{
+    font-size: 24px;
+}
+
+
+
+/* Footer section */
+footer{
+    background-color: hsl(260, 8%, 14%);
+    padding: 15px 50px;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+#home-school-logo-footer{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+#home-school-logo-footer span{
+    color: hsl(180, 66%, 49%);
+}
+
+#social-media-icons-footer{
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+}
+
+#social-media-icons-footer a:hover, #social-media-icons-footer a:visited{
+    opacity: 30%;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+/* Sign-Up section */
+#sign-up-container{
+    background-color: hsl(257, 27%, 26%);
+    padding: 50px;
+    background-image: url("../images/bg-intro-desktop.png"); 
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.sign-up-columns{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#left-sign-up-column{
+    width: 500px;
+    line-height: 1.5;
+    color: white;
+}
+
+#left-sign-up-column h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#left-sign-up-column h5{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#try-it-free-box{
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 10px;
+    padding: 20px 50px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 1px 5px hsl(266deg 8% 14%);
+    color: white;
+}
+
+#try-it-free-box span{
+    font-weight: bold;
+}
+
+#sign-up-box{
+    margin: 20px 0;
+    padding: 15px;
+    box-shadow: 2px 10px hsl(266deg 8% 14%);
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#sign-up-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#sign-up-form .edited-inputs{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 75%);
+}
+
+#sign-up-form #sign-up-button{
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 5px;
+    padding: 15px 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+    border: none;
+}
+
+#sign-up-button:hover{
+    opacity: 30%;
+    cursor: pointer;
+}
+
+#terms-and-services-sign-up{
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#terms-and-services-sign-up a{
+    color: hsl(0, 87%, 67%);
+    cursor: pointer;
+}
+
+#already-have-account{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+#already-have-account a{
+    color: hsl(0, 87%, 67%);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.empty-field-errors-sign-up{
+    display: none;
+    color: hsl(0, 87%, 67%);
+    font-size: 12px;
+}
+
+
+
+/* Log-In section */
+body#log-in-page{
+    background-color: hsl(257, 27%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../images/bg-intro-desktop.png");
+    padding: 50px;
+}
+
+#log-in-container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+#welcome-back-box{
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 10px;
+    padding: 20px 50px;
+    font-size: 18px;
+    box-shadow: 1px 5px hsl(266deg 8% 14%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+#welcome-back{
+    font-weight: bold;
+}
+
+#log-in-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+    padding: 15px;
+    box-shadow: 2px 10px hsl(266deg 8% 14%);
+    border-radius: 10px;
+    background-color: white;
+}
+
+#log-in-form .edited-inputs{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 75%);
+}
+
+#remember-forgot-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+[type=checkbox]{
+    width: 10px;
+    height: 10px;
+}
+
+#remember-me-log-in{
+    display: flex;
+    flex-direction: flex-start;
+    align-items: center;
+}
+
+#remember-forgot-section a{
+    color: hsl(0, 87%, 67%);
+    cursor: pointer;
+}
+
+#log-in-form #log-in-button{
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 5px;
+    padding: 15px 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+
+#log-in-button:hover{
+    opacity: 30%;
+    cursor: pointer;
+}
+
+#dont-have-account-box-log-in{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#dont-have-account-box-log-in a{
+    color: hsl(0, 87%, 67%);
+    cursor: pointer;
+}
+
+.empty-field-errors-log-in{
+    color: hsl(0, 87%, 67%);
+    font-size: 12px;
+    display: none;
+}
+
+
+
+
+@media(max-width: 600px){
+    /* Header section */
+    #header-container{
+        padding: 15px;
+    }
+    
+    #home-school-logo-header{
+        font-size: 20px;
+    }
+
+    #benefits-reviews-pricing-faq, #right-header-section{
+        display: none;
+    }
+
+    #menu-bar{
+        display: block;
+    }
+
+    #menu-bar:hover{
+        opacity: 30%;
+        cursor: pointer;
+    }
+
+
+    /* Hero section */
+    #hero-container{
+        flex-direction: column-reverse;
+        background-image: none;
+        margin: 0;
+        padding: 30px 15px 30px 15px;
+        align-items: center;
+        gap: 25px;
+    }
+
+    #text-hero-section{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #text-hero-section h1{
+        margin: 0;
+        font-size: 30px;
+        text-align: center;
+        padding: 0 50px;
+    }
+
+    #text-hero-section h6{
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #image-hero-section{
+        margin: 0;
+        width: 100%;
+        background-position: center;
+        height: 240px;
+    }
+
+
+    /* Benfits section */
+    #benefits-cards-container{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        margin-top: 50px;
+    }
+
+    #benefits-heading-box{
+        padding: 0 40px;
+    }
+
+    .benefits-cards{
+        width: 100%;
+    }
+
+
+    /* Rating & Reviews Area */
+    #rating-reviews-container{
+        padding: 50px 0;
+    }
+
+    #title-rating-box, .rating-boxes, #testimonials-container{
+        flex-direction: column;
+    }
+
+    #rating-reviews-title-box, #rating-boxes-container, .rating-boxes{
+        width: 100%;
+    }
+
+    #title-rating-box{
+        gap: 0;
+    }
+
+    #rating-reviews-title-box{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #rating-reviews-title-box h2{
+        font-size: 30px;
+        margin: 0;
+    }
+
+    #rating-reviews-title-box h6{
+        margin: 30px 0;
+        max-width: 27ch;
+    }
+
+    .rating-boxes{
+        align-items: center;
+        gap: 5px;
+        margin: 10px 0;
+    }
+
+    #testimonials-container{
+        gap: 15px;
+        margin-bottom: 0;
+    }
+    
+    .reviews-cards-text-comment{
+        max-width: 40ch;
+    }
+
+
+    /* Price section */
+    #subscription-cards-container{
+        flex-direction: column;
+    }
+
+    .purple-subscription-card{
+        margin: 20px 0;
+    }
+
+    #subscription-period-container{
+        width: 250px;
+        margin: 50px 0;
+    }
+
+    #timer-container{
+        width: 300px;
+    }
+
+
+    /* FAQ section */
+    #faq-box{
+        margin: 200px 0 50px 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #faq-box-left-column{
+        width: 100%;
+    }
+
+    #faq-image-box{
+        transform: translate(-50%, 0);
+        top: -190px;
+        left: 50%;
+    }
+
+    #faq-box-right-column{
+        margin: 0;
+    }
+
+    #faq-title-box{
+        margin: 120px 0 40px 0;
+    }
+
+
+    /* Footer section */
+    footer{
+        padding: 25px;
+    }
+
+    #home-school-logo-footer{
+        font-size: 20px;
+    }
+
+    footer nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    /* Sign-Up section */
+    #sign-up-container{
+        height: auto;
+        flex-direction: column;
+        padding: 50px 15px 70px 15px;
+    }
+
+    #left-sign-up-column{
+        width: 100%;
+        margin: 50px 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    #left-sign-up-column h2{
+        font-size: 28px;
+        width: 350px;
+    }
+    
+    #left-sign-up-column h5{
+        font-size: 14px;
+        width: 350px;
+    }
+}
+
+
+
+
+
+

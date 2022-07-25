@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Log In</title>
+        <link rel="stylesheet" href="./css/reset.css"/>
+        <link rel="stylesheet" href="./css/style.css"/>
+        <script src="https://kit.fontawesome.com/4802c08e59.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body id="log-in-page">
+        <div id="log-in-container">
+            <div id="welcome-back-box">
+                <p id="welcome-back">Welcome back!</p>
+                <p>What are you learning today?</p>
+            </div>
+            <div>
+                <form id="log-in-form">
+                    <input id="username-input-log-in" class="edited-inputs" type="text" placeholder="Username"/>
+                    <div id="empty-field-error-username-log-in" class="empty-field-errors-log-in">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>This field is mandatory</span>
+                    </div>
+                    <input id="password-input-log-in" class="edited-inputs" type="password" placeholder="Password"/>
+                    <div id="empty-field-error-password-log-in" class="empty-field-errors-log-in">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>This field is mandatory</span>
+                    </div>
+                    <div id="remember-forgot-section">
+                        <div id="remember-me-log-in">
+                            <input type="checkbox"/>
+                            <p>Remember me</p>
+                        </div>
+                        <p>
+                            Forgot
+                            <a href="file:///D:/Curs%20HTML,%20CSS,%20JS/Session%2020%20-%20js11/Personal%20project/index.html#">password?</a>
+                        </p>
+                    </div>
+                    <input id="log-in-button" type="submit" value="LOG IN"/>
+                </form>
+            </div>
+            <div id="dont-have-account-box-log-in">
+                <p>Don't have an account?</p>
+                <p>
+                    <a href="file:///D:/Curs%20HTML,%20CSS,%20JS/Session%2020%20-%20js11/Personal%20project/SignUp.html" target="_blank">Create your account here!</a>
+                </p> 
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./js/myjavascriptLogIn.js"></script>
+    </body>
+</html>
