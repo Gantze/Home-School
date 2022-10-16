@@ -22,7 +22,7 @@ let timerDays = document.getElementById('timer-days');
 let timerHours = document.getElementById('timer-hours');
 let timerMinutes = document.getElementById('timer-minutes');
 let timerSeconds = document.getElementById('timer-seconds');
-let countDownDate = new Date('Aug 01, 2022 00:00:00').getTime();
+let countDownDate = new Date('Dec 31, 2022 23:59:59').getTime();
 
 let timePass = setInterval(function() {
         let today = new Date().getTime();
