@@ -626,15 +626,19 @@ hr{
 .faq-text-lines div{
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
-.faq-text-lines p, .faq-text-lines i.fa-angle-up{
+.faq-text-lines p, i.fa-angle-up, div.active i.fa-angle-down{
     display: none;
+}
+
+div.active + p, div.active i.fa-angle-up{
+    display: block;
 }
 
 .faq-text-lines i.fa-angle-up, .faq-text-lines i.fa-angle-down{
     font-size: 11px;
-    cursor: pointer;
     color: #e27e36;
 }
 
